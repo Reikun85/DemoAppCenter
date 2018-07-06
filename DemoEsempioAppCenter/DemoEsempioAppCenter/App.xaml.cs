@@ -19,7 +19,12 @@ namespace DemoEsempioAppCenter
 
         protected override void OnStart()
         {
-            AppCenter.Start("ios=169a9830-603c-481d-9b42-1a7b1a5b0f9b;" + "android=e57768e2-3819-4dcb-83e2-7d2e9f092ec7;", typeof(Analytics), typeof(Crashes))
+            AppCenter.Start("ios=169a9830-603c-481d-9b42-1a7b1a5b0f9b;" + "android=e57768e2-3819-4dcb-83e2-7d2e9f092ec7;", typeof(Analytics), typeof(Crashes));
+         try {
+                throw new Exception("ERRORREEEEEEEEE111111");
+            } catch (Exception e) {
+                Crashes.TrackError(e);
+            }
         }
 
         protected override void OnSleep()

@@ -4,5 +4,6 @@
         <!-- Place new controls here -->
         <Label Text="Ciao Mondo!!!!!!" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
         <Label Text="BauBau" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+
     </StackLayout>
 </ContentPage>
